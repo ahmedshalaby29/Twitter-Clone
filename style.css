@@ -26,7 +26,7 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 10px 0px 10px 13%;
+  padding: 10px 5% 10px 10%;
   width: 29%;
   height: 100%;
   position: fixed;
@@ -86,7 +86,7 @@ header {
 .main-account {
   width: 100%;
   height: 30%;
-  padding-top: 185px;
+  padding-top: 186px;
 }
 
 .main-account a {
@@ -385,7 +385,7 @@ main {
 .follow-details {
   display: flex;
   flex-direction: column;
-  margin-right: 30px;
+  margin-left: 10px;
 }
 
 .follow-details a {
@@ -412,7 +412,7 @@ main {
 }
 
 .follow .tweet-button {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   font-weight: 300;
 
   width: 75px;
@@ -421,4 +421,103 @@ main {
   font-weight: 600;
   background-color: white;
   color: black;
+}
+
+.follow-cont {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 1281px) {
+  header {
+    width: 9%;
+    padding: 10px 0;
+  }
+  main {
+    margin-left: 10%;
+    width: 90%;
+  }
+  header span {
+    display: none;
+  }
+
+  header .tweet-button {
+    width: 50%;
+    border-radius: 50%;
+    font-size: 1.4rem;
+  }
+
+  header .main-account {
+    display: flex;
+    justify-content: center;
+  }
+
+  header .main-account i {
+    display: none;
+  }
+
+  header .account-details {
+    display: none;
+  }
+
+  .nav-links {
+    align-items: center;
+  }
+
+  .nav-links a i {
+    margin-right: 0;
+  }
+
+  .nav-links a,
+  .main-account a {
+    padding: 1px 1px;
+  }
+
+  .main-feed {
+    width: 52%;
+  }
+
+  .side-feed {
+    width: 40%;
+  }
+
+  .new-tweet {
+    padding: 5px;
+  }
+
+  .follow-profile {
+    padding: 30px 8px;
+  }
+  .follow .tweet-button {
+    margin: 0 0 0 -1px;
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .side-feed {
+    display: none;
+  }
+
+  .main-flex {
+    padding-right: 20%;
+  }
+
+  .main-feed {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  header {
+    display: none;
+  }
+  main {
+    margin: 0;
+    width: 100%;
+  }
+  .main-flex {
+    padding: 0;
+    width: 100%;
+  }
 }
